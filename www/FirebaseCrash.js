@@ -7,9 +7,9 @@ module.exports = {
             exec(resolve, reject, PLUGIN_NAME, "log", [message]);
         });
     },
-    logError: function(message) {
+    logError: function(message, stack) {
         return new Promise(function(resolve, reject) {
-            exec(resolve, reject, PLUGIN_NAME, "logError", [message]);
+            exec(resolve, reject, PLUGIN_NAME, "logError", [message, stack]);
         });
     },
     setUserId: function(userId) {
