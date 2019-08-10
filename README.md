@@ -8,7 +8,9 @@ Log non-fatal exceptions in addition to automatically reported app crashes. [Fir
 The _stack_ parameter must be a string consisting of lines separated by '\r', each of which corresponds to one frame of the stack trace in the form: 'className;methodName;fileName;lineNum;columnNum;isEval'. 
 
 Example:
+```js
 var stack = 'Foo;bar;src/dir/file.js;10;5;0';
+```
 
 p.s. You can use the "error-stack-parser" library to get the JavaScript call stack.
 
